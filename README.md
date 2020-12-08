@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### 兼容ie8
+* https://blog.csdn.net/lycIT/article/details/79668945
+* 采用低版本兼容的 dependency 有 react@0.x antd@1.x jquery@1.x
