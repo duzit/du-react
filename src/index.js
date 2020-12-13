@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'antd/dist/antd.css';
 import reportWebVitals from './reportWebVitals';
 
 // import App from './App';
@@ -19,11 +20,16 @@ import reportWebVitals from './reportWebVitals';
 // );
 
 import Setup from './setup/index';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import todoList from './redux/reducers';
+
+let store = createStore(todoList);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <Setup />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
