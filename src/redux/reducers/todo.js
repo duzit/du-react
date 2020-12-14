@@ -7,13 +7,13 @@ const todos = (state = [], action) => {
         {
           id: action.id,
           text: action.text,
-          complated: false
+          completed: false
         }
       ]
     case 'TOGGLE_TODO':
       return state.map(item =>
         (item.id === action.id) 
-          ? { ...item, complated: !item.complated }
+          ? { ...item, completed: !item.completed }
           : item
       );
     default: 

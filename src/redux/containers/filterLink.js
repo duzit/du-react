@@ -4,7 +4,7 @@ import { setFilter } from '../actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    filter: ownProps.filter === state.Filter
+    active: ownProps.filter === state.Filter
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Button
 } from 'antd';
-import App from './components/app';
+// import App from './components/app';
 
 class HelloRedux extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class HelloRedux extends React.Component {
         <p>{this.state.num}</p>
         <Button onClick={this.subClick}>Sub</Button>
         <Button type="primary" onClick={this.addClick}>Add</Button>
-        <App />
+        {/* <App /> */}
       </div>
     )
   }

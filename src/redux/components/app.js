@@ -3,14 +3,12 @@ import Footer from './footer';
 import AddTodo from '../containers/addTodo';
 import VisibleTodoList from '../containers/visibleTodoList';
 
-const App = () => {
-  return (
-    <div>
-      <AddTodo />
-      <VisibleTodoList />
-      <Footer />
-    </div>
-  )
-}
+const App = () => (
+  <div>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </div>
+)
 
 export default App;
