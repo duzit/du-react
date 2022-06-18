@@ -7,6 +7,7 @@ import Hello from '../hello';
 import Clock from '../Clock/clock';
 import Login from '../loginInOut/control';
 import helloRedux from '../redux';
+import Combine from '../Combine';
 
 const Setup = () => {
   return (
@@ -25,12 +26,17 @@ const Setup = () => {
           <li>
             <Link to='/redux'>Redux</Link>
           </li>
+          {/* Combine */}
+          <li>
+            <Link to='/Combine'>Combine 组合</Link>
+          </li>
         </ul>
         <hr/>
         <Route path="/" component={Hello} />
         <Route path="/clock" component={Clock} />
         <Route path="/login" component={Login} />
         <Route path="/redux" component={helloRedux} />
+        <Route path="/Combine" component={Combine} />
       </div>
     </Router>
   )

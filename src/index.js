@@ -25,6 +25,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import todoApp from './redux/reducers';
 import App from './redux/components/app';
+import Hooks from './hooks'
 
 let store = createStore(todoApp);
 
@@ -32,6 +33,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Setup />
     <App />
+    <Hooks />
   </Provider>,
   document.getElementById('root')
 );
