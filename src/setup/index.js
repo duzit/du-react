@@ -8,6 +8,7 @@ import Clock from '../Clock/clock';
 import Login from '../loginInOut/control';
 import helloRedux from '../redux';
 import Combine from '../Combine';
+import JSX from '../JSX'
 
 const Setup = () => {
   return (
@@ -30,6 +31,9 @@ const Setup = () => {
           <li>
             <Link to='/Combine'>Combine 组合</Link>
           </li>
+          <li>
+            <Link to='/JSX'>JSX</Link>
+          </li>
         </ul>
         <hr/>
         <Route path="/" component={Hello} />
@@ -37,6 +41,7 @@ const Setup = () => {
         <Route path="/login" component={Login} />
         <Route path="/redux" component={helloRedux} />
         <Route path="/Combine" component={Combine} />
+        <Route path="/JSX" component={JSX} />
       </div>
     </Router>
   )
