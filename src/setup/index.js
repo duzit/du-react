@@ -10,6 +10,7 @@ import helloRedux from '../redux';
 import Combine from '../Combine';
 import JSX from '../JSX'
 import Context from '../Context';
+import API from '../API';
 
 const Setup = () => {
   return (
@@ -38,6 +39,9 @@ const Setup = () => {
           <li>
             <Link to='/context'>Context</Link>
           </li>
+          <li>
+            <Link to='/api'>API</Link>
+          </li>
         </ul>
         <hr/>
         <Route path="/" component={Hello} />
@@ -47,6 +51,7 @@ const Setup = () => {
         <Route path="/Combine" component={Combine} />
         <Route path="/JSX" component={JSX} />
         <Route path="/context" component={Context} />
+        <Route path="/api" component={API} />
       </div>
     </Router>
   )
